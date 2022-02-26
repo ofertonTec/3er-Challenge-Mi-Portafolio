@@ -1,0 +1,134 @@
+body{
+    background: #F5F5F5;
+    font-family: 'Raleway', sans-serif;
+}
+
+header{
+    height: 88px;
+}
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+    top: 34.5px;
+}
+.logo-principal{
+    width: 16px;
+    height: 16px;
+}
+nav{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+nav li{
+    display: inline-block;
+    margin: 0 0 0 32px;
+    padding: 5px;
+}
+nav li:hover{
+    background: #cccc;
+}
+nav a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #000000;
+}
+
+/*Estilos del main*/
+.hero{
+    width: 940px;
+    height: 368px;
+    margin: 0 auto;
+    position: relative;
+    padding: 32px;
+}
+.titulo-principal{
+    font-size: 52px;
+}
+.contenido{
+    width: 60%;
+}
+.descripcion{
+    font-size: 22px;
+    padding-top: 24px;
+}
+.links li{
+    display: inline-block;
+    padding: 24px  32.69px 0 0;
+}
+.links a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+    cursor: pointer;
+}
+.mifoto{
+    width: 40%;
+    position: absolute;
+    top: 32px;
+    right: 0;
+}
+.mifoto img{
+    width: 91%;
+    border-radius: 500px;
+}
+
+/*Estilos section sobreMi*/
+.sobre-mi{
+    background: #EAF2FD;
+    padding-bottom: 10px;
+}
+.sobre-mi div{
+    width: 940px;
+    margin: 0 auto;
+    padding: 64px 152px;
+}
+.sobre-mi h1{
+    font-size: 32px;
+    font-weight: bold;
+    padding-bottom: 16px;
+}
+.sobre-mi p{
+    width: 751px;
+    font-size: 16px;
+    line-height: 18.78px;
+}
+/*Estilos footer*/
+footer{
+    height: 102px;
+    background: #FFFFFF;
+}
+footer p{
+    
+    text-align: center;
+    padding: 32px 0 ;
+}
+
+/*Estilos de la section Skills*/
+.skills{
+    padding: 150px 0;
+}
+.skills .titulo{
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+.skills ul{
+    width: 940px;
+    margin: 0 auto;
+}
+.skills li{
+    display: inline-block;
+    vertical-align: top;  /*Alinea los elementos en un mismo nivel*/
+    width: 150px;
+    height: 150px;
+    margin:0 1.5px;
+    background: #FFFFFF;
+
+    
+}
+.skills li div{
+    padding: 40px;
+}
