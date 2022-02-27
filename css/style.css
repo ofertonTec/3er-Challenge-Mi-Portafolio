@@ -1,235 +1,335 @@
-body{
+body {
     background: #F5F5F5;
     font-family: 'Raleway', sans-serif;
 }
 
-header{
+header {
     height: 88px;
 }
-.caja{
+
+.caja {
     width: 940px;
     position: relative;
     margin: 0 auto;
     top: 34.5px;
 }
-.logo-principal{
+
+.logo-principal {
     width: 16px;
     height: 16px;
 }
-nav{
+
+nav {
     position: absolute;
     top: 0;
     right: 0;
 }
 
-nav li{
+nav li {
     display: inline-block;
     margin: 0 0 0 32px;
     padding: 5px;
 }
-nav li:hover{
+
+nav li:hover {
     background: #cccc;
 }
-nav a{
+
+nav a {
     text-decoration: none;
     font-size: 16px;
     color: #000000;
 }
 
 /*Estilos del main*/
-.hero{  
+.hero {
     margin: 0 auto;
 }
-.contenido{
+
+.contenido {
     width: 940px;
     margin: 0 auto;
 }
- .contenido .contenido-principal{
+
+.contenido .contenido-principal {
     width: 63%;
     display: inline-block;
     vertical-align: super;
 }
-.contenido .imagen-principal{
+
+.contenido .imagen-principal {
     width: 36%;
-    border-radius: 350px;   
+    border-radius: 350px;
 
 }
 
-.contenido-principal .titulo{
+.contenido-principal .titulo {
     font-size: 52px;
 }
-.descripcion{
+
+.descripcion {
     font-size: 22px;
     padding-top: 24px;
     line-height: 25px;
 }
-.links li{
+
+.links li {
     display: inline-block;
-    padding: 24px  32.69px 0 0;
+    padding: 24px 32.69px 0 0;
 }
-.links a{
+
+.links a {
     text-decoration: none;
     color: #000000;
     font-size: 16px;
     cursor: pointer;
 }
-.links a::after{
+
+.links a::after {
     content: "↗";
 }
 
 
 /*INICIO: Estilos section sobreMi*/
-.sobre-mi{
+.sobre-mi {
     background: #EAF2FD;
     margin-top: 32px;
 }
-.sobre-mi div{
+
+.sobre-mi div {
     width: 940px;
     margin: 0 auto;
     padding: 64px 152px;
 }
-.sobre-mi h1{
+
+.sobre-mi h1 {
     font-size: 32px;
     font-weight: bold;
     padding-bottom: 16px;
 }
-.sobre-mi p{
+
+.sobre-mi p {
     width: 63%;
     font-size: 16px;
     line-height: 18px;
 }
+
 /*FIN: Estilos section sobreMi*/
 
 /*INICIO: Estilos de la section Skills*/
-.skills{
+.skills {
     margin: 32px 0;
 }
-.skills .titulo{
+
+.skills .titulo {
     font-size: 32px;
     font-weight: bold;
     text-align: center;
 }
-.skills .lista-skills{
+
+.skills .lista-skills {
     width: 940px;
     margin: 0 auto;
     margin-top: 32px;
-    
+
 }
-.skills li{
+
+.skills li {
     display: inline-block;
-    vertical-align: bottom;  /*Alinea los elementos en un mismo nivel*/
+    vertical-align: bottom;
+    /*Alinea los elementos en un mismo nivel*/
     width: 150px;
     height: 150px;
-    margin:0 1.5px;
+    margin: 0 1.5px;
     background: #FFFFFF;
     box-sizing: border-box;
     padding: 25px;
 }
+
 /*FIN: Estilos de la section Skills*/
 
 /*INICIO: Estilos de la section hobbies*/
-.hobbies{
+.hobbies {
     margin: 32px 0;
 }
-.hobbies .titulo{
+
+.hobbies .titulo {
     font-size: 32px;
     font-weight: bold;
     text-align: center;
 }
-.hobbies .lista-hobbies{
+
+.hobbies .lista-hobbies {
     width: 940px;
     margin: 0 auto;
     margin-top: 32px;
-    
+
 }
-.hobbies li{
+
+.hobbies li {
     display: inline-block;
-    vertical-align: bottom;  /*Alinea los elementos en un mismo nivel*/
+    vertical-align: bottom;
+    /*Alinea los elementos en un mismo nivel*/
     width: 150px;
     height: 150px;
-    margin:0 1.5px;
+    margin: 0 1.5px;
     background: #FFFFFF;
     box-sizing: border-box;
     padding: 25px;
 }
+
 /*FIN: Estilos de la section hobbies*/
 
+/*INICIO: Estilos de la section Formación Académica*/
+.formacionAcademica {
+    background: #EAF2FD;
+}
+
+.formacionAcademica div {
+    width: 940px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.formacionAcademica li {
+    display: inline-block;
+    background: #ffffff;
+    padding: 38px 48px;
+    box-sizing: border-box;
+}
+
+.formacionAcademica .titulo {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 45px 0 32px 0;
+}
+
+/*FIN: Estilos de la section Formación Académica*/
+
 /*INICIO: Estilos footer*/
-footer{
+footer {
     height: 102px;
     background: #FFFFFF;
 }
-footer p{
+
+footer p {
     text-align: center;
-    padding: 32px 0 ;
+    padding: 32px 0;
 }
+
 /*FIN: Estilos footer*/
 
 /*INICIO: Estilos responsive*/
 
-@media  screen and (max-width:640px){
-    .caja , .contenido{
+@media screen and (max-width:640px) {
+
+    .caja,
+    .contenido {
         width: auto;
     }
-    .contenido .contenido-principal, 
-    .contenido .imagen-principal,.skills .lista-skills, .hobbies .lista-hobbies {
-        width: 100%; 
+
+    .contenido .contenido-principal,
+    .contenido .imagen-principal,
+    .skills .lista-skills,
+    .hobbies .lista-hobbies {
+        width: 100%;
         text-align: center;
     }
-    .contenido-principal .links li{
+
+    .contenido-principal .links li {
         padding-top: 10px;
         padding-right: 3px;
     }
-    .sobre-mi p , .sobre-mi h1,.sobre-mi div {
-    width: auto;
-    padding: 10px 10px;
+
+    .sobre-mi p,
+    .sobre-mi h1,
+    .sobre-mi div {
+        width: auto;
+        padding: 10px 10px;
     }
-    .caja h1{
+
+    .caja h1 {
         text-align: center;
         font-size: 25px;
     }
-    nav{
+
+    nav {
         position: static;
         text-align: center;
     }
-    nav li{
+
+    nav li {
         margin-left: 2px;
         padding: 10px 0 0px;
-        
+
     }
-    nav a{
+
+    nav a {
         font-size: 12px;
     }
 
-    .contenido-principal .titulo{
+    .contenido-principal .titulo {
         font-size: 30px;
         padding: 10px 0;
         line-height: 40px;
     }
 
-    .skills li{
+    /*INICIO: Estilo section Skills*/
+    .skills li {
         width: 50px;
         height: 50px;
         padding: 5px;
-    }
-    .skills li p{
-        font-size: 10px;
-    }
-    .skills li img{
-        width: 15px;  
     }
 
-    .hobbies li{
+    .skills li p {
+        font-size: 10px;
+    }
+
+    .skills li img {
+        width: 15px;
+    }
+
+    /*FIN: Estilo section Skills*/
+
+    /*INICIO: Estilo section Hobbies*/
+    .hobbies li {
         width: 50px;
         height: 50px;
         padding: 5px;
     }
-    .hobbies li p{
+
+    .hobbies li p {
         font-size: 10px;
     }
-    .hobbies li img{
-        width: 15px;  
+
+    .hobbies li img {
+        width: 15px;
     }
-    
+    /*FIN: Estilo section Hobbies*/
+
+     /*INICIO: Estilo section Formación Acádemica*/
+     .formacionAcademica div{
+         width: auto;
+     }
+     .formacionAcademica img{
+         width: 50px;
+         
+     }
+
+     .formacionAcademica li{
+        width: 100px;
+        height: 100px;
+        padding: 15px;
+        vertical-align: bottom;
+
+     }
+     .formacionAcademica h1, p{
+         font-size: 10px;
+     }
+     /*FIN: Estilo section Formación Acádemica*/
+
 }
+
 /*FIN: Estilos responsive*/
