@@ -3,13 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-
     <title>Mi portafolio</title>
 </head>
 
@@ -21,8 +17,8 @@
                 Copia</h1>
             <nav>
                 <ul>
-                    <li> <a href="inicio.html">Sobre Mi</a> </li>
-                    <li><a href="skills.html">Skills</a></li>
+                    <li> <a href="#sobreMi">Sobre Mi</a> </li>
+                    <li><a href="#skills">Skills</a></li>
                     <li> <a href="">Hobbies</a></li>
                     <li><a href="">Formación</a></li>
                     <li><a href="">Proyectos</a></li>
@@ -33,42 +29,82 @@
     </header>
 
     <main>
-        <section class="hero">
+        <section id="hero" class="hero">
             <div class="contenido">
-                <p class="titulo-principal">Hola, mi nombre es Joel y construyo paginas web</p>
-                <p class="descripcion">Soy formado en la carrera profesional de Ingeniería de Sistemas y actualmente
-                    estoy
-                    participando del proyecto Oracle ONE
-                    en Alura Latam.</p>
-                <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                <ul class="links">
-                    <li> <a target="_blank" href="https://github.com/ofertonTec?tab=repositories">Github</a><img src="img/flecha.png" alt=""></li>
-                    <li><a target="_blank" href="https://www.linkedin.com/in/joel-llacsahuache-copia-821705149/">Linkedin</a> <img src="img/flecha.png" alt=""></li>
-                    <li><a target="_blank" href="https://www.instagram.com/ofertontec/?hl=es-la">Instagram</a><img src="img/flecha.png" alt=""> </li>
-                    <li><a target="_blank" href="https://drive.google.com/drive/folders/1zLFmOGO4Jm_rTCNUHFDtFTfLpQ7_yDky">Curriculo</a> <img src="img/flecha.png" alt=""></li>
-                </ul>
-            </div>
-            <div class="mifoto">
-                <img src="img/foto-main.jpg" alt="Mi foto personal">
+                <div class="contenido-principal">
+                    <h1 class="titulo">Hola, mi nombre es Joel y construyo paginas web</h1>
+                    <p class="descripcion">Soy formado en la carrera profesional de Ingeniería de Sistemas y actualmente
+                        estoy
+                        participando del proyecto Oracle ONE
+                        en Alura Latam.</p>
+                    <ul class="links">
+                        <li> <a target="_blank" href="https://github.com/ofertonTec?tab=repositories">Github</a></li>
+                        <li><a target="_blank"
+                                href="https://www.linkedin.com/in/joel-llacsahuache-copia-821705149/">Linkedin</a></li>
+                        <li><a target="_blank" href="https://www.instagram.com/ofertontec/?hl=es-la">Instagram</a></li>
+                        <li><a target="_blank"
+                                href="https://drive.google.com/drive/folders/1zLFmOGO4Jm_rTCNUHFDtFTfLpQ7_yDky">Curriculo</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <img class="imagen-principal" src="img/foto-main.jpg" alt="Mi foto personal">
             </div>
         </section>
-        <section class="sobre-mi">
+
+        <section id="sobreMi" class="sobre-mi">
             <div>
                 <h1>Sobre Mi</h1>
                 <p>
                     Egresado de la carrera de Ingeniería de Sistemas de la Universidad Peruana Unión (UPeU), filial
                     Tarapoto. Con 11 meses como prevencioncita en la cabina de seguridad de CRP Medios y Entretenimiento
-                    Recepción. Asimismo 8 meses como Analista Programador en la empresa Build Soft SAC Sociedad Anónima y 7
+                    Recepción. Asimismo 8 meses como Analista Programador en la empresa Build Soft SAC Sociedad Anónima
+                    y 7
                     meses como Gestor Telefónico para la empresa Externa S.A.C.
-
+    
                     Responsable, comprometido, optimista, organizado, empático y con capacidad de trabajo en equipo, con
                     conocimientos en, Java, C#, Oracle(PL/SQL), Scrum.
                 </p>
             </div>
+            
+        </section>
+        <section id="skills" class="skills">
+            <h1 class="titulo">Skills</h1>
+            <ul class="lista-skills">
+                <li>
+                    <img src="img/html.png" alt="">
+                    <p>Html</p>
+                </li>
+                <li>
+                    <img src="img/js.png" alt="">
+                    <p>Java Script</p>
+
+                </li>
+                <li>
+                    <img src="img/php.png" alt="">
+                    <p>PHP</p>
+
+                </li>
+                <li>
+                    <img src="img/node.png" alt="">
+                    <p>Node JS</p>
+
+                </li>
+                <li>
+                    <img src="img/react.png" alt="">
+                    <p>React</p>
+
+                </li>
+                <li>
+                    <img src="img/css.png" alt="">
+                    <p>Css</p>
+                </li>
+            </ul>
+
         </section>
     </main>
 
-    <footer>
+    <footer class="footer">
         <p>&copy; Desarrollado por Joel Llacsahuache Copia 2022</p>
     </footer>
 

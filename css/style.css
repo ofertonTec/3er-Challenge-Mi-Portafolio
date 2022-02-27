@@ -37,22 +37,31 @@ nav a{
 }
 
 /*Estilos del main*/
-.hero{
-    width: 940px;
-    height: 368px;
+.hero{  
     margin: 0 auto;
-    position: relative;
-    padding: 32px;
-}
-.titulo-principal{
-    font-size: 52px;
 }
 .contenido{
-    width: 60%;
+    width: 940px;
+    margin: 0 auto;
+}
+ .contenido .contenido-principal{
+    width: 63%;
+    display: inline-block;
+    vertical-align: super;
+}
+.contenido .imagen-principal{
+    width: 36%;
+    border-radius: 350px;   
+
+}
+
+.contenido-principal .titulo{
+    font-size: 52px;
 }
 .descripcion{
     font-size: 22px;
     padding-top: 24px;
+    line-height: 25px;
 }
 .links li{
     display: inline-block;
@@ -64,21 +73,15 @@ nav a{
     font-size: 16px;
     cursor: pointer;
 }
-.mifoto{
-    width: 40%;
-    position: absolute;
-    top: 32px;
-    right: 0;
-}
-.mifoto img{
-    width: 91%;
-    border-radius: 500px;
+.links a::after{
+    content: "↗";
 }
 
-/*Estilos section sobreMi*/
+
+/*INICIO: Estilos section sobreMi*/
 .sobre-mi{
     background: #EAF2FD;
-    padding-bottom: 10px;
+    margin-top: 32px;
 }
 .sobre-mi div{
     width: 940px;
@@ -91,44 +94,95 @@ nav a{
     padding-bottom: 16px;
 }
 .sobre-mi p{
-    width: 751px;
+    width: 63%;
     font-size: 16px;
-    line-height: 18.78px;
+    line-height: 18px;
 }
-/*Estilos footer*/
-footer{
-    height: 102px;
-    background: #FFFFFF;
-}
-footer p{
-    
-    text-align: center;
-    padding: 32px 0 ;
-}
+/*FIN: Estilos section sobreMi*/
 
-/*Estilos de la section Skills*/
+/*INICIO: Estilos de la section Skills*/
 .skills{
-    padding: 150px 0;
+    padding-top: 32px;
+    background: red;
 }
 .skills .titulo{
     font-size: 32px;
     font-weight: bold;
     text-align: center;
 }
-.skills ul{
+.skills .lista-skills{
     width: 940px;
     margin: 0 auto;
+    margin-top: 32px;
+    
 }
 .skills li{
     display: inline-block;
-    vertical-align: top;  /*Alinea los elementos en un mismo nivel*/
+    vertical-align: bottom;  /*Alinea los elementos en un mismo nivel*/
     width: 150px;
     height: 150px;
     margin:0 1.5px;
+    padding-right: 5px;
     background: #FFFFFF;
+    box-sizing: border-box;
+    text-align: end;    
+}
+/*FIN: Estilos de la section Skills*/
 
-    
+/*INICIO: Estilos footer*/
+footer{
+    height: 102px;
+    background: #FFFFFF;
 }
-.skills li div{
-    padding: 40px;
+footer p{
+    text-align: center;
+    padding: 32px 0 ;
 }
+/*FIN: Estilos footer*/
+
+/*INICIO: Estilos responsive*/
+
+@media  screen and (max-width:640px){
+    .caja , .contenido{
+        width: auto;
+    }
+    .contenido .contenido-principal, 
+    .contenido .imagen-principal,.skills .lista-skills {
+        width: 100%; 
+        text-align: center;
+    }
+    .contenido-principal .links li{
+        padding-top: 10px;
+        padding-right: 3px;
+    }
+    .sobre-mi p , .sobre-mi h1,.sobre-mi div {
+    width: auto;
+    padding: 10px 10px;
+    }
+    .caja h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    nav li{
+        padding-top: 5px;
+        margin-left: 5px;
+    }
+    nav a{
+        font-size: 10px;
+    }
+
+    .skills li{
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+    }
+    .skills li p{
+        font-size: 10px;
+    }
+    .skills li img{
+        width: 15px;  
+    }
+}
+/*FIN: Estilos responsive*/
