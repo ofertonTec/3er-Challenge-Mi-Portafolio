@@ -190,6 +190,7 @@ nav a {
     margin: 0 auto;
     text-align: center;
     margin-bottom: 32px;
+    padding-bottom: 32px;
 }
 
 .formacionAcademica li {
@@ -199,14 +200,64 @@ nav a {
     box-sizing: border-box;
 }
 
-.formacionAcademica .titulo {
+.formacionAcademica .titulo , .experiencia .titulo {
     text-align: center;
     font-size: 32px;
     font-weight: bold;
     padding: 45px 0 32px 0;
 }
-
+.formacionAcademica li h1{
+    font-weight: bold;
+}
 /*FIN: Estilos de la section Formación Académica*/
+
+/*INICIO: Estilos de la section Experiencia Profesional*/
+.experiencia .general{
+    display: flex;
+    width: 940px;
+    margin: 0 auto;
+    align-items: center;
+    padding-bottom: 64px;
+}
+
+.experiencia .general .imagen{
+    width: 60%;
+}
+.experiencia .general .info{
+    width: 36%;
+    padding-left: 32px;
+}
+.experiencia .general .info h1{
+    font-size:22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.experiencia .general .info .botones{
+    padding-top: 10px;
+}
+.experiencia .general .imagen img{
+    width: 100%;
+}
+.experiencia .general .botones li{
+    display: inline-block;
+    padding: 10px;
+    
+}
+.experiencia .general .botones a{
+    text-decoration: none;
+    font-size: 16px;
+}
+.experiencia .general .botones .btn-repositorio{
+    border: 1px solid blue;
+}
+.experiencia .general .botones .btn-demo{
+    background: blue;
+}
+.experiencia .botones .btn-demo a{
+    color: white;
+}
+/*FIN: Estilos de la section Experiencia Profesional*/
+
 
 /*INICIO: Estilos footer*/
 footer {
@@ -312,12 +363,12 @@ footer p {
      /*INICIO: Estilo section Formación Acádemica*/
      .formacionAcademica div{
          width: auto;
+         padding-bottom: 32px;
      }
      .formacionAcademica img{
          width: 50px;
          
      }
-
      .formacionAcademica li{
         width: 100px;
         height: 100px;
@@ -329,6 +380,21 @@ footer p {
          font-size: 10px;
      }
      /*FIN: Estilo section Formación Acádemica*/
+
+     /*INICIO: Estilos section Experiencia Profesional*/
+
+     .experiencia .general{
+         width: 90%;
+         display: block;
+     }
+     .experiencia .general .imagen{
+         width: 100%;
+     }
+     .experiencia .general .info{
+         width: 100%;
+     }
+
+     /*FIN: Estilos section Experiencia Profesional*/
 
 }
 
