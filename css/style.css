@@ -102,8 +102,7 @@ nav a{
 
 /*INICIO: Estilos de la section Skills*/
 .skills{
-    padding-top: 32px;
-    background: red;
+    margin: 32px 0;
 }
 .skills .titulo{
     font-size: 32px;
@@ -122,12 +121,38 @@ nav a{
     width: 150px;
     height: 150px;
     margin:0 1.5px;
-    padding-right: 5px;
     background: #FFFFFF;
     box-sizing: border-box;
-    text-align: end;    
+    padding: 25px;
 }
 /*FIN: Estilos de la section Skills*/
+
+/*INICIO: Estilos de la section hobbies*/
+.hobbies{
+    margin: 32px 0;
+}
+.hobbies .titulo{
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+.hobbies .lista-hobbies{
+    width: 940px;
+    margin: 0 auto;
+    margin-top: 32px;
+    
+}
+.hobbies li{
+    display: inline-block;
+    vertical-align: bottom;  /*Alinea los elementos en un mismo nivel*/
+    width: 150px;
+    height: 150px;
+    margin:0 1.5px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    padding: 25px;
+}
+/*FIN: Estilos de la section hobbies*/
 
 /*INICIO: Estilos footer*/
 footer{
@@ -147,7 +172,7 @@ footer p{
         width: auto;
     }
     .contenido .contenido-principal, 
-    .contenido .imagen-principal,.skills .lista-skills {
+    .contenido .imagen-principal,.skills .lista-skills, .hobbies .lista-hobbies {
         width: 100%; 
         text-align: center;
     }
@@ -161,16 +186,25 @@ footer p{
     }
     .caja h1{
         text-align: center;
+        font-size: 25px;
     }
     nav{
         position: static;
+        text-align: center;
+        margin: 10px 0;
     }
     nav li{
         padding-top: 5px;
         margin-left: 5px;
     }
     nav a{
-        font-size: 10px;
+        font-size: 15px;
+    }
+
+    .contenido-principal .titulo{
+        font-size: 30px;
+        padding: 10px 0;
+        line-height: 40px;
     }
 
     .skills li{
@@ -184,5 +218,18 @@ footer p{
     .skills li img{
         width: 15px;  
     }
+
+    .hobbies li{
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+    }
+    .hobbies li p{
+        font-size: 10px;
+    }
+    .hobbies li img{
+        width: 15px;  
+    }
+    
 }
 /*FIN: Estilos responsive*/
