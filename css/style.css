@@ -191,14 +191,14 @@ footer p{
     nav{
         position: static;
         text-align: center;
-        margin: 10px 0;
     }
     nav li{
-        padding-top: 5px;
-        margin-left: 5px;
+        margin-left: 2px;
+        padding: 10px 0 0px;
+        
     }
     nav a{
-        font-size: 15px;
+        font-size: 12px;
     }
 
     .contenido-principal .titulo{
