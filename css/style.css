@@ -184,6 +184,9 @@ nav a {
 .formacionAcademica {
     background: #EAF2FD;
 }
+#img_upeu{
+height: inherit;
+}
 
 .formacionAcademica div {
     width: 940px;
