@@ -9,50 +9,45 @@
     <title>Mi portafolio</title>
 </head>
 
-<body>
-
-    <header>
-        <div class="caja">
-            <h1><img class="logo-principal" src="img/Vector.png" alt="Logo de mi portafolio personal"> Joel Llacsahuache
-                Copia</h1>
-            <nav>
-                <ul>
-                    <li> <a href="inicio.html">Sobre Mi</a> </li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li> <a href="#hobbies">Hobbies</a></li>
-                    <li><a href="#formacionAcademica">Formación</a></li>
-                    <li><a href="#experiencia">Proyectos</a></li>
-                    <li><a href="">Contactos</a></li>
-                </ul>
-            </nav>
+<body class="contenedor">
+    <header class="header">
+        <div class="empresa">
+            <img src="img/Vector.png" alt="Logo de mi portafolio" class="logo">
+            <p class="nombre">Llacsahuache</p>
         </div>
+        <nav class="menu">
+            <a class="link" href="#inicio.html">Sobre Mi</a> </li>
+            <a class="link" href="#skills">Skills</a></li>
+            <a class="link" href="#hobbies">Hobbies</a></li>
+            <a class="link" href="#formacionAcademica">Formación</a></li>
+            <a class="link" href="#experiencia">Proyectos</a></li>
+            <a class="link_correo" href="">joel.llacsahuache@gmail.com</a></li>
+        </nav>
     </header>
+    <main class="contenido">
+        <section class="descripcion">
+            <img class="mifoto" src="img/joel.png" alt="Joel Llacsahuache Copia">
 
-    <main>
-        <section id="hero" class="hero">
-            <div class="contenido">
-                <div class="contenido-principal">
-                    <h1 class="titulo">Hola, mi nombre es Joel y construyo paginas web</h1>
-                    <p class="descripcion">Soy formado en la carrera profesional de Ingeniería de Sistemas y actualmente
+            <div class="links">
+                <div class="resumen">
+                    <p>¡Que tal! soy Joel Llacsahuache Copia y construyo paginas web</p>
+                    <p>Soy formado en la carrera profesional de Ingeniería de Sistemas y actualmente
                         estoy
                         participando del proyecto Oracle ONE
                         en Alura Latam.</p>
-                    <ul class="links">
-                        <li> <a target="_blank" href="https://github.com/ofertonTec?tab=repositories">Github</a></li>
-                        <li><a target="_blank"
-                                href="https://www.linkedin.com/in/joel-llacsahuache-copia-821705149/">Linkedin</a></li>
-                        <li><a target="_blank" href="https://www.instagram.com/ofertontec/?hl=es-la">Instagram</a></li>
-                        <li><a target="_blank"
-                                href="https://drive.google.com/drive/folders/1zLFmOGO4Jm_rTCNUHFDtFTfLpQ7_yDky">Curriculo</a>
-                        </li>
-                    </ul>
                 </div>
-
-                <img class="imagen-principal" src="img/joel.png" alt="Joel Llacsahuache Copia">
+                <div class="items">
+                    <li> <a target="_blank" href="https://github.com/ofertonTec?tab=repositories">Github</a></li>
+                    <li><a target="_blank"
+                            href="https://www.linkedin.com/in/joel-llacsahuache-copia-821705149/">Linkedin</a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/ofertontec/?hl=es-la">Instagram</a></li>
+                    <li><a target="_blank"
+                            href="https://drive.google.com/drive/folders/1zLFmOGO4Jm_rTCNUHFDtFTfLpQ7_yDky">Curriculo</a>
+                    </li>
+                </div>
             </div>
         </section>
-
-        <section id="sobreMi" class="sobre-mi">
+        <section class="sobre_mi">
             <div>
                 <h1>Sobre Mi</h1>
                 <p>
@@ -66,164 +61,169 @@
                     conocimientos en, Java, C#, Oracle(PL/SQL), Scrum.
                 </p>
             </div>
-
         </section>
 
         <section id="skills" class="skills">
             <h1 class="titulo">Skills</h1>
-            <ul class="lista-skills">
-                <li>
+            <div class="lista-skills">
+                <div>
                     <img src="img/skills/html.png" alt="">
                     <p>Html</p>
-                </li>
-                <li>
+                </div>
+                <div>
                     <img src="img/skills/js.png" alt="">
                     <p>Java Script</p>
 
-                </li>
-                <li>
+                </div>
+                <div>
                     <img src="img/skills/php.png" alt="">
                     <p>PHP</p>
-                </li>
-                <li>
+                </div>
+                <div>
                     <img src="img/skills/node.png" alt="">
                     <p>Node JS</p>
 
-                </li>
-                <li>
+                </div>
+                <div>
                     <img src="img/skills/react.png" alt="">
                     <p>React</p>
 
-                </li>
-                <li>
+                </div>
+                <div>
                     <img src="img/skills/css.png" alt="">
                     <p>Css</p>
-                </li>
-            </ul>
+                </div>
+            </div>
         </section>
 
         <section id="hobbies" class="hobbies">
             <h1 class="titulo">Hobbies</h1>
-            <ul class="lista-hobbies">
-                <li>
-                    <img src="img/hobbies/patin.png" alt="">
-                    <p>Patinaje</p>
-                </li>
-                <li>
-                    <img src="img/hobbies/guitar.png" alt="">
-                    <p>Tocar Bajo</p>
-                </li>
-                <li>
+            <div class="lista-hobbies">
+                <div>
                     <img src="img/hobbies/audifono.png" alt="">
-                    <p>Oir Musica</p>
+                    <p>Escuchar Musica</p>
+                </div>
+                <div>
+                    <img src="img/hobbies/camara.png" alt="">
+                    <p>Hacer Fotografias</p>
 
-                </li>
-                <li>
-                    <img src="img/hobbies/tv.png" alt="">
-                    <p>Ver Series</p>
-
-                </li>
-                <li>
+                </div>
+                <div>
                     <img src="img/hobbies/cocinar.png" alt="">
                     <p>Cocinar</p>
-                </li>
+                </div>
+                <div>
+                    <img src="img/hobbies/guitar.png" alt="">
+                    <p>Cantar y entonar</p>
 
-                <li>
-                    <img src="img/hobbies/camara.png" alt="">
-                    <p>Tomar Fotos</p>
+                </div>
+                <div>
+                    <img src="img/hobbies/patin.png" alt="">
+                    <p>Patinar</p>
 
-                </li>
-            </ul>
+                </div>
+                <div>
+                    <img src="img/hobbies/tv.png" alt="">
+                    <p>Mirar programas educativos</p>
+                </div>
+            </div>
         </section>
 
-        <section id="formacionAcademica" class="formacionAcademica">
-            <div>
+        <section class="formacion_academica">
+            <div class="contenedor_formacion">
                 <h1 class="titulo">Formación Academica</h1>
-                <ul class="lista-formacion">
-                    <li>
-                        <img  id="img_upeu" src="img/formacion academica/upeu.png" alt="Universidad Peruana Unión">
+                <div class="lista_formacion">
+                    <div class="item_formacion">
+                        <div class="imagen">
+                            <img src="img/formacion academica/upeu.png" alt="Universidad Peruana Unión">
+                        </div>
                         <h1>Ingeniería de Sistemas</h1>
                         <p>2013-2018</p>
-                    </li>
-                    <li>
-                        <img src="img/formacion academica/alura.png" alt="">
+                    </div>
+                    <div class="item_formacion">
+                        <div class="imagen">
+                            <img src="img/formacion academica/alura.png" alt="">
+                        </div>
                         <h1>Principiante en programación</h1>
                         <p>2022-Alura</p>
-                    </li>
-                    <li>
-                        <img src="img/formacion academica/alura.png" alt="">
+                    </div>
+                    <div class="item_formacion">
+                        <div class="imagen">
+                            <img src="img/formacion academica/alura.png" alt="">
+                        </div>
                         <h1>SQL con MySQL</h1>
                         <p>2022-Alura</p>
-                    </li>
-
-                </ul>
+                    </div>
+                </div>
             </div>
-
-
         </section>
 
-        <section id="experiencia" class="experiencia">
+        <section class="experiencia">
             <h1 class="titulo">Experiencia Profesional</h1>
             <div class="general">
-                <h1 class="imagen"> <img src="img/experiencia profesional/encriptador.png" alt=""></h1>
+                <img src="img/experiencia profesional/encriptador.png" alt="">
                 <div class="info">
                     <h1>Encriptador de Texto</h1>
                     <p>Challenge Oracle</p>
-                    <ul class="botones">
-                        <li class="btn-repositorio"><a target="_blank"
-                                href="https://github.com/ofertonTec/Encriptador-Oracle-One">Repositorio</a></li>
-                        <li class="btn-demo"><a target="_blank"
-                                href="https://ofertontec.github.io/Encriptador-Oracle-One/index.html">Ver Demo</a></li>
-                    </ul>
+                    <div class="botones">
+                        <a target="_blank" href="https://github.com/ofertonTec/Encriptador-Oracle-One">Repositorio</a>
+                        <a target="_blank" href="https://ofertontec.github.io/Encriptador-Oracle-One/index.html">Ver
+                            Demo</a>
+                    </div>
                 </div>
             </div>
-
             <div class="general">
-                <h1 class="imagen"> <img src="img/experiencia profesional/ahorcado.png" alt=""></h1>
+                <img src="img/experiencia profesional/ahorcado.png" alt="">
                 <div class="info">
-                    <h1>El Ahorcado</h1>
+                    <h1>Juego del Ahorcado</h1>
                     <p>Challenge Oracle</p>
-                    <ul class="botones">
-                        <li class="btn-repositorio"><a target="_blank"
-                                href="https://github.com/ofertonTec/Challenge-Ahorcado">Repositorio</a></li>
-                        <li class="btn-demo"><a target="_blank"
-                                href="https://ofertontec.github.io/Challenge-Ahorcado/">Ver Demo</a></li>
-                    </ul>
+                    <div class="botones">
+                        <a target="_blank" href="https://github.com/ofertonTec/Encriptador-Oracle-One">Repositorio</a>
+                        <a target="_blank" href="https://ofertontec.github.io/Encriptador-Oracle-One/index.html">Ver
+                            Demo</a>
+                    </div>
                 </div>
+            </div>
+
+        </section>
+        <section class="contacto">
+            <div>
+                <div class="encabezado">
+                    <h1>Contacto</h1>
+                    <p>¿Quiere Contactarte conmigo?</p>
+                    <p>Solicite información registrandosé en el siguiente formulario</p>
+                </div>
+                <form class="formulario">
+                    <div class="input">
+                        <label for="nombre">Nombres</label>
+                        <input type="text" id="nombre" class="input_padron" placeholder="xxx Joel" required>
+                    </div>
+                    <div class="input">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" class="input_padron" placeholder="xxx@gmail.com" required>
+                    </div>
+                    <div class="input">
+                        <label for="asunto">Asunto</label>
+                        <input type="text" id="asunto" class="input_padron" required>
+                    </div>
+                    <div class="input">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea cols="auto" rows="auto" id="mensaje" class="input_padron" required></textarea>
+                    </div>
+
+                    <input class="btn_enviar" type="submit" value="Enviar Mensaje">
+
+                </form>
 
             </div>
 
         </section>
 
-        <section id="contacto" class="contacto">
-            <form class="formulario">
-                <h1>Contacto</h1>
-                <p>¿Quiere Contactarte conmigo?</p>
-                <p>Complete el siguiente formulario y me pindre en contacto con usted lo antes posible</p>
-                <br>
-                <label for="nombre">Nombres</label>
-                <input type="text" id="nombre" class="input-padron" placeholder="xxx Joel" required>
-
-                <label for="email">E-mail</label>
-                <input type="email" id="email" class="input-padron" placeholder="xxx@gmail.com" required>
-
-                <label for="asunto">Asunto</label>
-                <input type="text" id="asunto" class="input-padron" required>
-
-                <label for="mensaje">Mensaje</label>
-                <textarea cols="auto" rows="auto" id="mensaje" class="input-padron" required></textarea>
-
-                <input class="btn-enviar" type="submit" value="Enviar Mensaje">
-
-            </form>
-
-        </section>
     </main>
 
     <footer class="footer">
         <p>&copy; Desarrollado por Joel Llacsahuache Copia 2022</p>
     </footer>
-
 </body>
 
 </html>
