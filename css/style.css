@@ -49,6 +49,7 @@
     display: none;
     text-decoration: none;
     color: #464646;
+    padding-right: 32px;
 
 }
 
@@ -411,4 +412,31 @@
         height: 56px;
     }
 
+}
+@media screen and (min-width:1200px) {
+    .menu .link{
+        display: flex;
+    }
+    .lista-skills,
+    .lista-hobbies {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    .lista-skills div , .lista-hobbies div, .item_formacion  {
+        width: 168px;
+        height: 186px;
+    }
+    .lista_formacion {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .experiencia .general img{
+        width: 704px;
+        height: 320px;
+    }
+    .sobre_mi p{
+        width: 751px;
+    }
+    .menu .link:hover{
+        color: #000;
+        font-weight: bold;
+    }
 }
