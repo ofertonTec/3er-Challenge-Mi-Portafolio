@@ -70,7 +70,7 @@
     align-items: center;
     justify-content: center;
     padding: 16px 18px;
-     
+
 }
 
 .descripcion .mifoto {
@@ -116,7 +116,8 @@
 }
 
 .sobre_mi div {
-    padding: 16px 18px;
+    padding: 32px 18px;
+
 }
 
 .sobre_mi h1 {
@@ -129,6 +130,7 @@
     font-size: 14px;
     line-height: 16px;
     text-align: justify;
+    line-height: 16px;
 }
 
 /*Estilos del contenido: skills*/
@@ -155,7 +157,7 @@
 
 .lista-skills {
     display: grid;
-    gap: 32px;
+    gap: 16px;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
 }
@@ -194,7 +196,7 @@
 
 .lista-hobbies {
     display: grid;
-    gap: 32px;
+    gap: 16px;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
 }
@@ -295,7 +297,7 @@
     text-decoration: none;
     width: 76px;
     height: 16px;
-    color:  #2A7AE4;
+    color: #2A7AE4;
     border: 1px solid #2A7AE4;
     padding: 10px;
 }
@@ -311,68 +313,102 @@
 }
 
 /*Estilos del contenido: Contacto*/
-.contacto div{
+.contacto div {
     background-color: #EAF2FD;
 }
-.formulario{
+
+.formulario {
     padding: 16px 18px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.encabezado{
+
+.encabezado {
     padding: 16px 18px;
 }
-.encabezado h1{
+
+.encabezado h1 {
     font-size: 22px;
     font-weight: bold;
     padding-bottom: 16px;
 }
-.encabezado p{
+
+.encabezado p {
     line-height: 16px;
     text-align: justify;
 }
-.input_padron{
+
+.input_padron {
     width: 296px;
     height: 36px;
 }
-.formulario .input{
+
+.formulario .input {
     display: flex;
     flex-direction: column;
 }
-.btn_enviar{
+
+.btn_enviar {
     margin-top: 32px;
     background-color: #2A7AE4;
     font-size: 14px;
     color: #FFFFFF;
     padding: 10px;
     border: none;
-   
+
 }
+
 .footer {
     grid-area: footer;
     display: flex;
     justify-content: center;
-    height:50px;
-     ;
+    height: 50px;
 }
-.footer p{
+
+.footer p {
     font-size: 16px;
 }
 
-@media screen and (min-width:768px){
-   
-    
-    .descripcion{
-        flex-direction:row;
+@media screen and (min-width:768px) {
+
+
+    .descripcion {
+        flex-direction: row;
     }
 
-    .lista-skills , .lista-hobbies{
+    .lista-skills,
+    .lista-hobbies {
         grid-template-columns: repeat(3, 1fr);
     }
-    .lista_formacion{
-        grid-template-columns: repeat(3,1fr);
+
+    .lista_formacion {
+        grid-template-columns: repeat(3, 1fr);
     }
-    
+
+    .descripcion,
+    .sobre_mi div,
+    .skills,
+    .hobbies,
+    .contenedor_formacion,
+    .experiencia,
+    .formulario,
+    .encabezado {
+        padding: 18px 32px;
+    }
+
+    .lista-skills div , .lista-hobbies div, .item_formacion .imagen {
+        width: 224px;
+        height: 118px;
+    }
+    .experiencia .general img{
+        width: 704px;
+        height: 320px;
+    }
+    .input_padron{
+        width: 704px;
+        height: 56px;
+    }
+
 }
