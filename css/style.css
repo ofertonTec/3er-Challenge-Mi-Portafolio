@@ -421,9 +421,17 @@
     .lista-hobbies {
         grid-template-columns: repeat(6, 1fr);
     }
-    .lista-skills div , .lista-hobbies div, .item_formacion  {
+    .lista-skills div , .lista-hobbies div {
         width: 168px;
         height: 186px;
+    }
+    .item_formacion {
+        width: 368px;
+        height: 286px;
+    }
+    .item_formacion .imagen{
+        width: auto;
+        height: 80%;
     }
     .lista_formacion {
         grid-template-columns: repeat(3, 1fr);
