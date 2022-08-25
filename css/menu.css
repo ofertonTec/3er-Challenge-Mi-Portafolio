@@ -32,7 +32,7 @@
 .nav_item::after{
     content: "";
     display: block;
-    background-color: rgb(89, 14, 14);
+    background-color: #fff;
     width: 90%;
     margin-top: 3px;
     height: 3px;
