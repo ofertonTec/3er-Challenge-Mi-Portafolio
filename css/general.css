@@ -11,53 +11,7 @@
 
 
 }
-
-/*Estilos al header*/
-
-.header {
-    grid-area: header;
-    display: flex;
-    justify-content: space-between;
-    padding: 16px 18px;
-}
-
-.header .empresa {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo {
-    height: 50%;
-}
-
-.nombre {
-    color: #464646;
-    padding: 5px;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.menu .link {
-    display: none;
-    text-decoration: none;
-    color: #464646;
-    padding-right: 32px;
-
-}
-
-.menu .link_correo {
-    text-decoration: none;
-    color: #464646;
-    font-size: 14px;
-}
+/*ESTILOS PARA EL MENU INTERACTIVO*/
 
 /*Estilos del contenido: descripción*/
 .contenido {
