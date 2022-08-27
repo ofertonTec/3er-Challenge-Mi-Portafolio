@@ -79,10 +79,10 @@
     .nav_menu{
         position: absolute;
         top: 58px;
-        padding: 40px;
+        padding: 20px;
         right: 0;
-        background-color: #05445c;
-        width:50%;
+        background-image: url("/img/fondo_header.jpg");
+        width:40%;
         height: auto;
         display: flex;
         flex-direction: column;
