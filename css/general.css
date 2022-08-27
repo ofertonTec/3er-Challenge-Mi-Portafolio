@@ -1,4 +1,5 @@
 .contenedor {
+    position: relative;
     background-color: #E5E5E5;
     font-family: 'Raleway', sans-serif;
     min-width: 100%;
@@ -7,10 +8,12 @@
     gap: 16px;
     grid-template-areas: "header"
         "contenido"
+        "article"
         "footer";
 
 
 }
+
 /*ESTILOS PARA EL MENU INTERACTIVO*/
 
 /*Estilos del contenido: descripción*/
@@ -220,19 +223,19 @@
 
 /*Estilos del contenido: experiencia*/
 .experiencia {
-    padding: 0px 18px;
+    padding: 16px 18px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.experiencia .titulo{
+
+.experiencia .titulo {
     font-size: 22px;
     font-weight: bold;
     text-align: center;
     margin-bottom: 32px;
 }
-
 
 .experiencia .general img {
     width: 296px;
@@ -322,6 +325,34 @@
 
 }
 
+.redes_sociales {
+    width: 20px;
+    height: 150px;
+    background-image: url("/img/fondo_header.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.redes_sociales img {
+    width: 50px;
+}
+
+.redes_sociales {
+    position: fixed;
+    grid-area: article;
+    top: 375px;
+    right: 0;
+    padding: 32px;
+}
+
+.redes_sociales img:hover {
+    width: 65px;
+    transition: 1s;
+}
+
 .footer {
     grid-area: footer;
     display: flex;
@@ -363,51 +394,65 @@
         padding: 18px 32px;
     }
 
-    .lista-skills div , .lista-hobbies div, .item_formacion .imagen {
+    .lista-skills div,
+    .lista-hobbies div,
+    .item_formacion .imagen {
         width: 224px;
         height: 118px;
     }
-    .experiencia .general img{
+
+    .experiencia .general img {
         width: 704px;
         height: 320px;
     }
-    .input_padron{
+
+    .input_padron {
         width: 704px;
         height: 56px;
     }
 
 }
+
 @media screen and (min-width:1200px) {
-    .menu .link{
+    .menu .link {
         display: flex;
     }
+
     .lista-skills,
     .lista-hobbies {
         grid-template-columns: repeat(6, 1fr);
     }
-    .lista-skills div , .lista-hobbies div {
+
+    .lista-skills div,
+    .lista-hobbies div {
         width: 168px;
         height: 186px;
     }
+
     .item_formacion {
         width: 368px;
         height: 286px;
     }
-    .item_formacion .imagen{
+
+    .item_formacion .imagen {
         width: auto;
         height: 80%;
     }
+
     .lista_formacion {
         grid-template-columns: repeat(3, 1fr);
     }
-    .experiencia .general img{
+
+    .experiencia .general img {
         width: 704px;
         height: 320px;
     }
-    .sobre_mi p{
+
+    .sobre_mi p {
         width: 751px;
     }
-    .menu .link:hover{
+
+    .menu .link:hover {
         color: #000;
         font-weight: bold;
     }
