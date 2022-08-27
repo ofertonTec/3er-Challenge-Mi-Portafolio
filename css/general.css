@@ -220,7 +220,7 @@
 
 /*Estilos del contenido: experiencia*/
 .experiencia {
-    padding: 16px 18px;
+    padding: 0px 18px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -233,9 +233,6 @@
     margin-bottom: 32px;
 }
 
-.experiencia .general {
-    padding-top: 64px;
-}
 
 .experiencia .general img {
     width: 296px;
@@ -332,7 +329,7 @@
     align-items: center;
     height: 50px;
     color: #fff;
-    background-color: #05445c;
+    background-image: url("/img/fondo_header.jpg");
 }
 
 .footer p {
