@@ -91,6 +91,7 @@
     .nav_menu a{
         color: #ffff;
     }
+    
     .nav_input:checked + .nav_menu{
         clip-path: circle(100% at center);
     }
