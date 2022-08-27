@@ -1,7 +1,7 @@
 .header {
     padding: 32px 18px;
     position:fixed;
-    background-color: #05445c;
+    background-image: url("/img/fondo_header.jpg");
     left: 0;
     right: 0;
 }
@@ -72,6 +72,9 @@
     }
     .div_container{
         position: relative;
+    }
+    #cerrar_menu{
+        display: none;
     }
     .nav_menu{
         position: absolute;
