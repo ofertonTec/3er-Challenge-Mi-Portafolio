@@ -328,7 +328,7 @@
 
 
 .container_redes img {
-    width: 30px;
+    width: 50px;
 }
 .redes_label{
     background-color: rgb(104, 98, 98);
@@ -350,7 +350,7 @@
     margin-top: 10px;
     padding: 10px;
     display: flex;
-    gap: 10px;
+    gap: 20px;
     flex-direction: column;
     background-image: radial-gradient(circle at 26.15% 45.8%, #5473c9 0, #1b3464 50%, #00000e 100%);
    
