@@ -1,7 +1,7 @@
 .header {
+    background-image: radial-gradient(circle at 26.15% 45.8%, #5473c9 0, #1b3464 50%, #00000e 100%);
     padding: 32px 18px;
     position: fixed;
-    background-image: radial-gradient(circle at 26.15% 45.8%, #5473c9 0, #1b3464 50%, #00000e 100%);
     left: 0;
     right: 0;
 }
