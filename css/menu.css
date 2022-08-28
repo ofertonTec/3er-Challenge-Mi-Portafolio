@@ -1,35 +1,40 @@
 .header {
     padding: 32px 18px;
-    position:fixed;
-    background-image: url("/img/fondo.jpg");
+    position: fixed;
+    background-image: radial-gradient(circle at 26.15% 45.8%, #5473c9 0, #1b3464 50%, #00000e 100%);
     left: 0;
     right: 0;
 }
+
 .nav_container {
     position: relative;
     display: flex;
     justify-content: space-between;
 }
-.nav_menu{
+
+.nav_menu {
     display: grid;
     grid-auto-flow: column;
     gap: 2em;
     align-items: center;
     height: 100%;
-    
+
 }
-.nav_logo{
+
+.nav_logo {
     width: 50px;
     color: #fff;
 }
-.nav_item{
+
+.nav_item {
     color: #ffff;
     text-decoration: none;
-    --clippy:  polygon(0 0, 0 0, 0 100%, 0% 100%);
-    
+    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+
 
 }
-.nav_item::after{
+
+.nav_item::after {
     content: "";
     display: block;
     background-color: #fff;
@@ -40,11 +45,13 @@
     transition: clip-path .5s;
 
 }
-.nav_item:hover{
+
+.nav_item:hover {
     --clippy: polygon(0 0, 100% 0, 100% 99%, 0 100%);
 
 }
-.nav_container{
+
+.nav_container {
     display: flex;
     height: 100%;
     width: 90%;
@@ -52,50 +59,57 @@
     justify-content: space-between;
     align-items: center;
 }
-.nav_label, .nav_input{
+
+.nav_label,
+.nav_input {
     display: none;
 }
 
-.nav_logo{
+.nav_logo {
     font-size: 1.5em;
     font-weight: 900;
 }
-.nav_label{
+
+.nav_label {
     color: #fff;
 }
 
-@media (max-width: 800px){
+@media (max-width: 800px) {
 
-    .nav_label{
+    .nav_label {
         display: block;
         cursor: pointer;
     }
-    .div_container{
+
+    .div_container {
         position: relative;
     }
-    #cerrar_menu{
+
+    #cerrar_menu {
         display: none;
     }
-    .nav_menu{
+
+    .nav_menu {
         position: absolute;
         top: 58px;
         padding: 20px;
         right: 0;
-        background-image: url("/img/fondo.jpg");
-        width:40%;
+        background-image: radial-gradient(circle at 26.15% 45.8%, #5473c9 0, #1b3464 50%, #00000e 100%);
+        width: 40%;
         height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
-        clip-path:  circle(0 at center);
+        clip-path: circle(0 at center);
         transition: clip-path 1s ease-in-out;
-        
+
     }
-    .nav_menu a{
+
+    .nav_menu a {
         color: #ffff;
     }
-    
-    .nav_input:checked + .nav_menu{
+
+    .nav_input:checked+.nav_menu {
         clip-path: circle(100% at center);
     }
 

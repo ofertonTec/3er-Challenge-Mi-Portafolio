@@ -328,7 +328,7 @@
 .redes_sociales {
     width: 20px;
     height: 150px;
-    background-image: url("../img/fondo.jpg");
+    background-image: radial-gradient(circle at 26.15% 45.8%, #5473c9 0, #1b3464 50%, #00000e 100%);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -360,7 +360,7 @@
     align-items: center;
     height: 50px;
     color: #fff;
-    background-image: url("../img/fondo.jpg");
+    background-image: radial-gradient(circle at 26.15% 45.8%, #5473c9 0, #1b3464 50%, #00000e 100%);
 }
 
 .footer p {
